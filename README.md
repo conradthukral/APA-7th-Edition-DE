@@ -10,26 +10,29 @@ Basiert auf https://github.com/briankavanaugh/APA-7th-Edition, mit folgenden Anp
 
 #### Manuelle Methode
 1. Word beenden
-2. Die Datei APASeventhEdition.xsl herunterladen und in folgendes Verzeichnis kopieren: 
+2. Die Datei APASeventhEdition_DE.xsl herunterladen und in folgendes Verzeichnis kopieren: 
    C:\Users\<dein_benutzername>\AppData\Roaming\Microsoft\Bibliography\Style kopieren
 3. Word starten. "APA7 (deutsch)" sollte als Formatvorlage im Tab "Referenzen" auswählbar sein
 
 #### Skript-Methode
 1. Word beenden
-2. Die Datei APASeventhEdition.bat herunterladen und ausführen
+2. Die Datei APASeventhEdition_DE.bat herunterladen und ausführen
 3. Word starten. "APA7 (deutsch)" sollte als Formatvorlage im Tab "Referenzen" auswählbar sein
 
 Die Datei führt lediglich den folgenden Befehl aus, der das Herunterladen der manuellen Methode automatisch erledigt:
 ```
-curl https://raw.githubusercontent.com/conradthukral/APA-7th-Edition-DE/main/APASeventhEdition.xsl -o "%appdata%\Microsoft\Bibliography\Style\APASeventhEdition.xsl"
+curl https://raw.githubusercontent.com/conradthukral/APA-7th-Edition-DE/main/APASeventhEdition_DE.xsl -o "%appdata%\Microsoft\Bibliography\Style\APASeventhEdition_DE.xsl"
 ```
 
 ### MacOS
 
 1. Word beenden
-2. Die Datei APASeventhEdition.xsl herunterladen und in folgendes Verzeichnis kopieren:
+2. Die Datei APASeventhEdition_DE.xsl herunterladen und in folgendes Verzeichnis kopieren:
    /Users/<dein_benutzername>/Library/Group Containers/UBF8T346G9.Office/User Content/Citations 
 3. Word starten. "APA7 (deutsch)" sollte als Formatvorlage im Tab "Referenzen" auswählbar sein
+
+## Technische Hinweise
+Anpassungen für die deutsche Version sind im XSL mit Kommentaren der Form `<!-- <Datum> GERMAN: <Beschreibung> -->` markiert
 
 ## Disclaimer
 Es gilt das Gleiche wie bei den Quellen, auf denen diese Version aufbaut: 
