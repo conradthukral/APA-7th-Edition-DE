@@ -1772,13 +1772,8 @@
 
   
   <xsl:template name="templ_prop_NoCommaBeforeAnd" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:NoCommaBeforeAnd"/>
+    <!-- 2023-10-16 GERMAN: hard-coded to yes - never add that comma -->
+    <xsl:text>yes</xsl:text>
   </xsl:template>
 
   <xsl:template name="templ_prop_SimpleAuthor_F" >
@@ -2116,13 +2111,13 @@
       </xsl:when>
 
        <xsl:when test="b:XslVersion">
-	<xsl:text>7</xsl:text>
+	      <xsl:text>7</xsl:text>
       </xsl:when>
 
       <xsl:when test="b:StyleNameLocalized">
         <xsl:choose>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1033'">
-            <xsl:text>APA7</xsl:text>
+            <xsl:text>APA7 (German)</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1025'">
             <xsl:text>APA</xsl:text>
@@ -2155,7 +2150,7 @@
             <xsl:text>APA</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1031'">
-            <xsl:text>APA</xsl:text>
+            <xsl:text>APA7 (deutsch)</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1046'">
             <xsl:text>APA</xsl:text>
@@ -2323,10 +2318,10 @@
               <b:ImportantField>
                 <xsl:text>b:Volume</xsl:text>
               </b:ImportantField>              
-	      <b:ImportantField>
+	            <b:ImportantField>
                 <xsl:text>b:Issue</xsl:text>
               </b:ImportantField>              
-	      <b:ImportantField>
+	            <b:ImportantField>
                 <xsl:text>b:DOI</xsl:text>
               </b:ImportantField>
             </xsl:when>
