@@ -419,17 +419,12 @@
   </xsl:template>
 
   
-  <xsl:template name="templ_str_EditionShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:EditionShortUnCap"/>
+  <xsl:template name="templ_str_EditionShortUnCap">
+    <!-- 2023-10-16 GERMAN: use "Aufl." instead of "Ausg."-->
+    <xsl:text>%1 Aufl.</xsl:text>
   </xsl:template>
-
   
+
   <xsl:template name="templ_str_EditionUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -489,13 +484,8 @@
 
   
   <xsl:template name="templ_str_NoDateShortUnCap" >
-    <xsl:param name="LCID" />
-    <xsl:variable name="_LCID">
-      <xsl:call-template name="localLCID">
-        <xsl:with-param name="LCID" select="$LCID"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:NoDateShortUnCap"/>
+    <!-- 2023-10-16 GERMAN: use "ohne Datum" insteaf of "kein Datum" -->
+    <xsl:text>ohne Datum</xsl:text>
   </xsl:template>
 
   

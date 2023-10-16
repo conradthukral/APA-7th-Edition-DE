@@ -3,9 +3,11 @@
 Basiert auf https://github.com/briankavanaugh/APA-7th-Edition, mit folgenden Anpassungen für Literaturverzeichnisse in deutschsprachigen Texten:
 
 * Kein Komma vor "&" in der Autorenliste
+* Einzelne Texte/Abkürzungen angepasst ("Aufl.", "ohne Datum")
 
 
-## InstallationWie verwende ich das?
+## Installation / Wie verwende ich das?
+
 ### Windows
 
 #### Manuelle Methode
