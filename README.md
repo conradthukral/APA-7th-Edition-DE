@@ -1,36 +1,37 @@
-# APA 7th Edition for Microsoft Word, German version
+# APA 7th Edition für Microsoft Word, deutsche Version
 
-Until (unless) Microsoft gets around to adding a template for the latest version, this is the APA 7th Edition XSLT modified by Mike Slagle, plus the two additional fixes posted in the comments found [here](https://answers.microsoft.com/en-us/msoffice/forum/all/apa-7th-edition-in-ms-word/486fc70e-b7c7-40df-89bb-f8fc07169d40). This way, if other changes are needed, this file can be updated.
+Basiert auf https://github.com/briankavanaugh/APA-7th-Edition, mit folgenden Anpassungen für Literaturverzeichnisse in deutschsprachigen Texten:
 
-## How to Use
+* Kein Komma vor "&" in der Autorenliste
 
+
+## InstallationWie verwende ich das?
 ### Windows
 
-#### Manual Method
-1. Exit Word
-2. Using Windows Explorer, copy the file APASeventhEdition.xsl to C:\Users\<your_user_name>\AppData\Roaming\Microsoft\Bibliography\Style 
-3. Restart Word and from the References tab in Word, you should be able to choose APA7. 
+#### Manuelle Methode
+1. Word beenden
+2. Die Datei APASeventhEdition.xsl herunterladen und in folgendes Verzeichnis kopieren: 
+   C:\Users\<dein_benutzername>\AppData\Roaming\Microsoft\Bibliography\Style kopieren
+3. Word starten. "APA7 (deutsch)" sollte als Formatvorlage im Tab "Referenzen" auswählbar sein
 
-#### Bat file method / Cmd method
-1. Exit word
-2. Copy the APASeventhEdition.bat file and allow it to run.
-3. Restart Word and from the References tab in Word, you should be able to choose APA7. 
+#### Skript-Methode
+1. Word beenden
+2. Die Datei APASeventhEdition.bat herunterladen und ausführen
+3. Word starten. "APA7 (deutsch)" sollte als Formatvorlage im Tab "Referenzen" auswählbar sein
 
-Note: The bat file simply runs the following line:
+Die Datei führt lediglich den folgenden Befehl aus, der das Herunterladen der manuellen Methode automatisch erledigt:
 ```
 curl https://raw.githubusercontent.com/conradthukral/APA-7th-Edition-DE/main/APASeventhEdition.xsl -o "%appdata%\Microsoft\Bibliography\Style\APASeventhEdition.xsl"
 ```
 
-
-
 ### MacOS
 
-1. Exit Word
-1. Using Finder, copy the file APASeventhEdition.xsl to *two* locations:
-    1. HD/Applications/Microsoft Word.app/Contents/Resources/Style/ (note that you will have to right-click and "View Contents" on the app icon at HD/Applications/Microsoft Word.app/)
-    1. HD/Users/\<your_user_name>/Library/Containers/com.microsoft.Word/Data/Library/Application Support/Microsoft/Office/Style/
-1. Restart Word and from the References tab in Word, you should be able to choose APA7. 
+1. Word beenden
+2. Die Datei APASeventhEdition.xsl herunterladen und in folgendes Verzeichnis kopieren:
+   /Users/<dein_benutzername>/Library/Group Containers/UBF8T346G9.Office/User Content/Citations 
+3. Word starten. "APA7 (deutsch)" sollte als Formatvorlage im Tab "Referenzen" auswählbar sein
 
 ## Disclaimer
-
-(same as Mike's) I am only providing this file and the necessary location for it for education purposes. If any installations of MS Office are corrupted as a result of using this file, I am not responsible to address or repair any issues. 
+Es gilt das Gleiche wie bei den Quellen, auf denen diese Version aufbaut: 
+Ich stelle diese Formatvorlage zur freien Verwendung zur Verfügung. 
+Ich gebe keine Garantie für die Richtigkeit der Angaben in dieser Anleitung oder für die Literaturverzeichnisse, die mit dieser Vorlage generiert werden!
