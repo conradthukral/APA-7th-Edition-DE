@@ -1,4 +1,4 @@
-# APA 7th Edition for Microsoft Word
+# APA 7th Edition for Microsoft Word, German version
 
 Until (unless) Microsoft gets around to adding a template for the latest version, this is the APA 7th Edition XSLT modified by Mike Slagle, plus the two additional fixes posted in the comments found [here](https://answers.microsoft.com/en-us/msoffice/forum/all/apa-7th-edition-in-ms-word/486fc70e-b7c7-40df-89bb-f8fc07169d40). This way, if other changes are needed, this file can be updated.
 
@@ -18,7 +18,7 @@ Until (unless) Microsoft gets around to adding a template for the latest version
 
 Note: The bat file simply runs the following line:
 ```
-curl https://raw.githubusercontent.com/briankavanaugh/APA-7th-Edition/main/APASeventhEdition.xsl -o "%appdata%\Microsoft\Bibliography\Style\APASeventhEdition.xsl"
+curl https://raw.githubusercontent.com/conradthukral/APA-7th-Edition-DE/main/APASeventhEdition.xsl -o "%appdata%\Microsoft\Bibliography\Style\APASeventhEdition.xsl"
 ```
 
 

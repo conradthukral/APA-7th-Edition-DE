@@ -1,1 +1,1 @@
-curl https://raw.githubusercontent.com/briankavanaugh/APA-7th-Edition/main/APASeventhEdition.xsl -o "%appdata%\Microsoft\Bibliography\Style\APASeventhEdition.xsl"
+curl https://raw.githubusercontent.com/conradthukral/APA-7th-Edition-DE/main/APASeventhEdition.xsl -o "%appdata%\Microsoft\Bibliography\Style\APASeventhEdition_DE.xsl"
