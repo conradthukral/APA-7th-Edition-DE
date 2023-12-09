@@ -4,6 +4,7 @@ Basiert auf https://github.com/briankavanaugh/APA-7th-Edition, mit folgenden Anp
 
 * Kein Komma vor "&" in der Autorenliste
 * Einzelne Texte/Abkürzungen angepasst ("Aufl.", "ohne Datum")
+* Keine Titel in Kurzbelegen
 
 
 ## Installation / Wie verwende ich das?
