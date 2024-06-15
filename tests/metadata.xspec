@@ -1,0 +1,20 @@
+<x:description
+    xmlns:x="http://www.jenitennison.com/xslt/xspec"
+    xmlns:b="http://schemas.openxmlformats.org/officeDocument/2006/bibliography"
+    stylesheet="../APASeventhEdition_DE.xsl">
+
+    <x:scenario label="Metadata: Version">
+        <x:context select="/">
+            <b:Version />
+        </x:context>
+        <x:expect>2020</x:expect>
+    </x:scenario>
+
+    <x:scenario label="Metadata: OfficeStyleKey">
+        <x:context select="/">
+            <b:OfficeStyleKey />
+        </x:context>
+        <x:expect>APA</x:expect>
+    </x:scenario>
+
+</x:description>

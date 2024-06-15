@@ -1,0 +1,7 @@
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+    stylesheet="../APASeventhEdition_DE.xsl">
+
+
+    <x:import href="metadata.xspec" />
+
+</x:description>
